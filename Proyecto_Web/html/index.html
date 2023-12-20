@@ -4,15 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto Web</title>
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <div id="modal">
+      <span class="icon-cerrar" onclick="cerrarModal();">CERRAR</span>
+      <p>Envianos un correo a <a href="mailto:mailto@info.com">mailTo</a></p>
+    </div>
     <nav>
       <img src="../img/AD.png" alt="" />
       <div>
+        <!-- <span class="icon-cerrar" onclick="cerrar();"></span> -->
         <a href="#">About</a>
         <a href="#">Testimonios</a>
-        <a href="#">Contacto</a>
+        <a href="#" onclick="abrirModal();">Contacto</a>
       </div>
     </nav>
     <header>
@@ -50,10 +56,32 @@
         </div>
       </section>
       <section>
+
+        <h4>Testimonios</h4>
+        <h2>Nuestros clientes hablan</h2>
+        <div>
+          <img src="../img/AndresGarcia.png" alt="">
+          <h3>Andrés García</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+        </div>
+        <div>
+          <img src="../img/VeraRodriguez.png" alt="">
+          <h3>Vera Rodriguez</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+        </div>
+        <div>
+          <img src="../img/MariaSanchez.png" alt="">
+          <h3>Maria Sanchez</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit</p>
+        </div>
+      </section>
+
+      <section>
         <div><img src="../img/img4.png" alt="" /></div>
         <div class="contenido1">
           <h3>Formá parte de nuestro Equipo</h3>
           <p>Visitá nuestro perfil de LinkedIn</p>
+          <a href="#" onclick="abrirModal();">contactános</a>
         </div>
         
       </section>
@@ -72,5 +100,6 @@
       </ul>
       <p>@todos los derechos reservados</p>
     </footer>
+    <script src="../js/codigo.js"></script>
   </body>
 </html>
